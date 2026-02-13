@@ -1,0 +1,11 @@
+<h2>Active Sessions</h2>
+<div id="sessions"></div>
+
+<script>
+fetch('/sessions')
+.then(res=>res.json())
+.then(data=>{
+  document.getElementById("sessions").innerHTML =
+    data.map(s=>"<p>"+s+"</p>").join("");
+});
+</script>

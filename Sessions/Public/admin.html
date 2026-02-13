@@ -1,0 +1,17 @@
+<h2>ALMEER XMD Admin Panel</h2>
+<input id="user" placeholder="Username">
+<input id="pass" placeholder="Password" type="password">
+<button onclick="login()">Login</button>
+
+<script>
+function login(){
+  if(
+    document.getElementById("user").value==="sider" &&
+    document.getElementById("pass").value==="skm@12345R"
+  ){
+    window.location="dashboard.html";
+  } else {
+    alert("Wrong credentials");
+  }
+}
+</script>
